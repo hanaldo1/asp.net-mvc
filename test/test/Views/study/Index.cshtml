@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+	/* 4. razor syntax 강의*/
+	var name = "aldo";
+
+	var num = 10;
+}
+
+<h1>studyController - Index page</h1>
+
+<!-- 4. razor syntax 강의 부분-->
+<!--
+<h3> @name 님 환영합니다.</h3>
+-->
+
+@if (num == 10)
+{
+	//<h4>@num  을 입력하셨습니다.</h4>
+}
+else
+{
+	//<h4> error </h4>
+}
+
+@for (var i = 1; i < 10; i++)
+{
+	//<h4> @i  번째 </h4>
+}
+
+<!-- 5. 강의 -->
+@* 주석 : ctrl + k + c *@
+@*
+# 1번째 방법	
+<h3> 사용자 번호 : @Model.UserNo </h3>
+
+<h3> 사용자 이름 : @Model.UserName </h3>
+*@
+
+@*
+# 2번째 방법	
+<h3> 사용자 번호 2 : @ViewBag.User.UserNo </h3>
+
+<h3> 사용자 이름 2 : @ViewBag.User.UserName </h3>
+*@
+
+@* 
+# 3번째 방법 
+<h3> 사용자 번호 3 : @ViewData["UserNo"]</h3>
+
+<h3> 사용자 번호 3 : @ViewData["UserName"]</h3>
+*@
