@@ -13,19 +13,19 @@ namespace aspboard.mvc6.Models
         /// <summary>
         /// 사용자 이름
         /// </summary>
-        [Required] // not null
+        [Required(ErrorMessage ="please input ID")] // not null
         public string UserName { get; set; }
 
         /// <summary>
         /// 사용자 아이디
         /// </summary>
-        [Required] // not null
+        [Required(ErrorMessage ="please input PW")] // not null
         public string UserId { get; set; }
 
         /// <summary>
         /// 사용자 패스워드
         /// </summary>
-        [Required] // not null
+        [Required(ErrorMessage ="please input NAME")] // not null
         public string UserPw { get; set; }
     }
 }
