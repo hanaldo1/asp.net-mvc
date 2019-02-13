@@ -1,0 +1,28 @@
+﻿@model aspboard.mvc6.Models.User
+
+<h4> register page test </h4>
+
+<!-- 
+form-horizontal : apply bootstrap class
+-->
+<form class="form-horizontal" method="post" asp-controller="Account" asp-action="Register">
+	<div class="form-group">
+		<label>ID</label>
+		<input type="text" class="form-control" asp-for="UserId" placeholder="input id" />
+		<span class="text-danger" asp-validation-for="UserId"></span>
+	</div>
+	<div class="form-group">
+		<label>PASSWORD</label>
+		<input type="password" class="form-control" asp-for="UserPw" placeholder="input password" />
+		<span class="text-danger" asp-validation-for="UserPw"></span>
+	</div>
+	<div class="form-group">
+		<label>NAME</label>
+		<input type="text" class="form-control" asp-for="UserName" placeholder="input name" />
+		<span class="text-danger" asp-validation-for="UserName"></span>
+	</div>
+	<div class="form-group">
+		<button type="submit" class="btn btn-primary"> submit </button>
+		<a class="btn btn-warning" href="#"> cancel </a>
+	</div>
+</form>
