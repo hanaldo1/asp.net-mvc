@@ -33,6 +33,10 @@ namespace aspboard.mvc6
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            //session 
+            //서비스에 등록
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +55,10 @@ namespace aspboard.mvc6
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+
+            //session
+            //app에 적용
+            app.UseSession();
 
             app.UseMvc(routes =>
             {
