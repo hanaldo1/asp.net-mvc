@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using aspboard.mvc6.DataContext;
 using aspboard.mvc6.Models;
 using aspboard.mvc6.ViewModel;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -44,6 +45,10 @@ namespace aspboard.mvc6.Controllers
                     if (user != null)
                     {
                         // login success
+                        //HttpContext.Session.SetInt32(key, value);
+                        // key: 식별자 
+                        //session
+                        HttpContext.Session.SetInt32("UserKey", user.UserNo);
                         return RedirectToAction("LoginSuccess", "Home");
                     }
                 }
@@ -52,6 +57,13 @@ namespace aspboard.mvc6.Controllers
                 ModelState.AddModelError(string.Empty, "사용자 id 혹은 password가 올바르지 않습니다.");
             }
             return View(model);
+        }
+        
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("UserKey");
+
+            return RedirectToAction("Index", "Home");
         }
         /// <summary>
         /// register page
