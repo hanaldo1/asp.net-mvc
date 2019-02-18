@@ -32,3 +32,4 @@ D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\aspboard.mvc6.pdb
 D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\aspboard.mvc6.csproj.CopyComplete
 D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
 D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Home\LoginSuccess.g.cshtml.cs

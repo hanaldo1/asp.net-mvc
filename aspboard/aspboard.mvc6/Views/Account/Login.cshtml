@@ -1,2 +1,20 @@
-﻿
-<h4> login page test </h4>
+﻿@model aspboard.mvc6.ViewModel.LoginVm
+
+<h4> login page </h4>
+
+<form class="form-horizontal" method="post" asp-controller="Account" asp-action="Login">
+	<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+	<div class="form-group">
+		<label>ID</label>
+		<input type="text" asp-for="UserId" class="form-control" placeholder="insert id" />
+		<span class="text-danger" asp-validation-for="UserId"></span>
+	</div>
+	<div class="form-group">
+		<label>PASSWORD</label>
+		<input type="password" asp-for="UserPw" class="form-control" placeholder="insert password" />
+		<span class="text-danger" asp-validation-for="UserPw"></span>
+	</div>
+	<div class="form-group">
+		<button type="submit" class="btn btn-success">LOGIN</button>
+	</div>
+</form>
