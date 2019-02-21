@@ -1,0 +1,27 @@
+﻿<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>No</th>
+			<th>Title</th>
+			<th>Writer</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var note in Model)
+		{
+			<tr>
+				<td>@note.BoardNo</td>
+				<td>
+					@* asp-route-(파라미터 이름) : 파라미터 전달 (컨트롤러에서 지시한 파라미터
+						이름과 같아야 함)*@
+					<a class="dtitle" asp-controller="Board" asp-action="Detail" asp-route-boardNo="@note.BoardNo">
+						@note.BoardTitle
+					</a>
+				</td>
+				<td>@note.UserNo</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+<a class="btn btn-warning" asp-controller="Board" asp-action="Add">Add</a>
