@@ -13,6 +13,8 @@ namespace aspboard.mvc6.DataContext
 
         public DbSet<Board> Boards { get; set; }
 
+        public DbSet<Snack> Snacks { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // @ : connection string을 있는 그대로 전달하기 위해 사용

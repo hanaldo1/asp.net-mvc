@@ -61,3 +61,22 @@ textarea {
         display: none;
     }
 }
+
+.Sheader {
+	margin: 20px 300px 20px 300px;
+}
+.menu {
+	background-color: #e73b63;
+	border-radius: 20px 20px;
+	padding: 5px 0px 5px 0px;
+}
+
+.menu div a{
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.menu div a:hover{
+	opacity: 0.4;
+}
