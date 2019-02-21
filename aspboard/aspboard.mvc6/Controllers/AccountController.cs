@@ -49,7 +49,7 @@ namespace aspboard.mvc6.Controllers
                         // key: 식별자 
                         //session
                         HttpContext.Session.SetInt32("UserKey", user.UserNo);
-                        return RedirectToAction("LoginSuccess", "Home");
+                        return RedirectToAction("Index", "Home");
                     }
                 }
                 // login fail
