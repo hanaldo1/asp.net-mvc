@@ -19,5 +19,6 @@ namespace aspboard.mvc6.Models
 
         [Required]
         public int SnackVote { get; set; }
+
     }
 }

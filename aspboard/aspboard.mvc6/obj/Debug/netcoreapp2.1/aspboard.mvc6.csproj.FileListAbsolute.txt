@@ -40,3 +40,4 @@ D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Board\D
 D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Snack\Index.g.cshtml.cs
 D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_SLayout.g.cshtml.cs
 D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Snack\Add.g.cshtml.cs
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Snack\Delete.g.cshtml.cs

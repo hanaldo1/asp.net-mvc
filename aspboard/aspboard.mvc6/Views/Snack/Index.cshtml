@@ -2,17 +2,17 @@
 
 	var header = DateTime.Now.Month.ToString() + "월의 간식";
 
-	var most_s = "";
+	List<string> most_s = new List<string>();
 	var vote = 0;
 
 	var Snack = Model;
 
 	foreach (var snack in Snack)
 	{
-		if (snack.SnackVote > vote)
+		if (snack.SnackVote >= vote && snack.SnackVote>0 )
 		{
 			vote = snack.SnackVote;
-			most_s = snack.SnackName;
+			most_s.Add(snack.SnackName);
 		}
 	}
 }
@@ -21,7 +21,12 @@
 	<div class="row s_head">
 		<div class="col-lg-12 text-center">
 			<div class="s_info month_s header"> @header </div>
-			<div class="s_info month_s most_s"> @most_s </div>
+			<div class="s_info month_s most_s"> 
+				@foreach (var msnack in most_s)
+				{
+					<span> @msnack </span>
+				}
+			</div>
 			<div class="s_info vote"> @vote.ToString()표 </div>
 		</div>
 		<div class="col-sm-6 col-lg-6 text-left">
@@ -29,7 +34,7 @@
 			<label style="font-size:15px">새 항목 추가하기</label>
 		</div>
 		<div class="col-sm-6 col-lg-6 text-right">
-			<a class="btn btn-danger"> delete </a>
+				<a href="@Url.Action("Delete","Snack")" class="btn btn-danger"> delete </a>
 		</div>
 	</div>
 </div>
@@ -47,7 +52,10 @@
 				<div>@snack.SnackPrice.ToString()원</div>
 			</div>
 			<div class="col-sm-4 col-lg-4">
-				<button class="btn btn-default btn-vote"> 투표</button>
+				<form class="form-horizontal" method="post" asp-controller="Snack" asp-action="Vote">
+					<input type="hidden" name="Sno" value="@snack.SnackNo" />
+					<button class="btn btn-default btn-vote"> 투표</button>
+				</form>
 			</div>
 		</div>
 	}

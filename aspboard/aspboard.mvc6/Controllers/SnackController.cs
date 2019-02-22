@@ -44,6 +44,7 @@ namespace aspboard.mvc6.Controllers
             var model = new Snack();
             model.SnackName = Sname;
             model.SnackPrice = Sprice;
+            model.SnackVote = SnackVote;
 
                 using (var db = new BoardDbContext())
                 {
@@ -55,5 +56,52 @@ namespace aspboard.mvc6.Controllers
                 }
             return View(model);
         }
+
+        [HttpGet]
+        public IActionResult Vote()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Vote(int Sno)
+        {
+            using(var db = new BoardDbContext())
+            {
+                var snack = db.Snacks.FirstOrDefault(s => s.SnackNo.Equals(Sno));
+                snack.SnackVote += 1 ;
+                if (db.SaveChanges() > 0)
+                {
+                    return Redirect("Index");
+                }
+            }
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Delete()
+        {
+            using (var db = new BoardDbContext())
+            {
+                var snack = db.Snacks.ToList();
+                return View(snack);
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int Sno)
+        {
+            using (var db = new BoardDbContext())
+            {
+                var snack = db.Snacks.FirstOrDefault(s => s.SnackNo.Equals(Sno));
+                db.Remove(snack);
+                if(db.SaveChanges() > 0)
+                {
+                    return Redirect("Index");
+                }
+            }
+            return View();
+        }
+
     }
 }
