@@ -20,9 +20,9 @@ MVC Study repository
 <br/>
 mvc 기본 기능 익히기 ( youtube 개발토끼님 mvc 강의 )
 
-    : 1 ~ 5 강 듣기, 직접 해보기
+    :개발 토끼님 강의 1 ~ 5
 
-    > : github (실습 파일)(https://github.com/hanjiwoo/mvc_study/tree/master/test)
+> : github (실습 파일)(https://github.com/hanjiwoo/mvc_study/tree/master/test)
 
 --------------------------------
 
@@ -30,12 +30,12 @@ mvc 기본 기능 익히기 ( youtube 개발토끼님 mvc 강의 )
 <br/>
 mssql( sql server ) 설치 & 설치 오류 해결
 
-    1. 제어판/프로그램 및 기능에서 mssql 관련 프로그램 모두 삭제 ( 인스턴스 제거 )
-    2. regedit 레지스트리 수정
-    > 참고했던 사이트 모음  (https://hanaldo.tistory.com/2)
-    3. mssql 관련 폴더 모두 제거 & 재부팅
-    4. visual studio 설치관리자에서 데이터베이스 엔진 설치 & 재부팅
-    5. mssql 재설치 
+1. 제어판/프로그램 및 기능에서 mssql 관련 프로그램 모두 삭제 ( 인스턴스 제거 )
+2. regedit 레지스트리 수정
+> 참고했던 사이트 모음  (https://hanaldo.tistory.com/2)
+3. mssql 관련 폴더 모두 제거 & 재부팅
+4. visual studio 설치관리자에서 데이터베이스 엔진 설치 & 재부팅
+5. mssql 재설치 
 
     : 개발토끼님 강의 6 ~ 7강
 
@@ -91,10 +91,10 @@ mssql( sql server ) 설치 & 설치 오류 해결
 <br/>
 간식 페이지 제작 
 
-    `기능` 
-    1. 간식 추가 
-    2. 간식 투표
-    3. 간식 삭제
-    4. 제일 높은 투표수의 간식 보여주기
-    (이달의 간식)
+```기능``` 
+1. 간식 추가 
+2. 간식 투표
+3. 간식 삭제
+4. 제일 높은 투표수의 간식 보여주기
+(이달의 간식)
 
