@@ -80,7 +80,7 @@ using aspboard.mvc6.Models;
             WriteLiteral("\t\t\t\t\t");
             EndContext();
             BeginContext(306, 130, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "185ee7153acd49adb97e27eb46e2840f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf5d032010214b3f92a7c5f7ae2f678b", async() => {
                 BeginContext(401, 8, true);
                 WriteLiteral("\r\n\t\t\t\t\t\t");
                 EndContext();
@@ -146,7 +146,7 @@ using aspboard.mvc6.Models;
             WriteLiteral("\t</tbody>\r\n</table>\r\n\r\n");
             EndContext();
             BeginContext(514, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10670641423a4c8aa6b73e897200ed5a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a4ec9373536b4fb6bbcb504e0353bf87", async() => {
                 BeginContext(581, 3, true);
                 WriteLiteral("Add");
                 EndContext();

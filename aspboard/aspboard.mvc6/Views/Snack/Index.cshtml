@@ -4,15 +4,24 @@
 
 	List<string> most_s = new List<string>();
 	var vote = 0;
+	var amost_s = "";
+	var ifequal = 0;
 
 	var Snack = Model;
 
 	foreach (var snack in Snack)
 	{
-		if (snack.SnackVote >= vote && snack.SnackVote>0 )
+		if (snack.SnackVote > vote && snack.SnackVote > 0)
+		{
+			vote = snack.SnackVote;
+			amost_s = snack.SnackName;
+			most_s.Add(amost_s);
+		}
+		else if (snack.SnackVote == vote && snack.SnackVote > 0)
 		{
 			vote = snack.SnackVote;
 			most_s.Add(snack.SnackName);
+			ifequal = 1;
 		}
 	}
 }
@@ -22,10 +31,18 @@
 		<div class="col-lg-12 text-center">
 			<div class="s_info month_s header"> @header </div>
 			<div class="s_info month_s most_s"> 
-				@foreach (var msnack in most_s)
+				@if (ifequal == 0)
 				{
-					<span> @msnack </span>
+					<span> @amost_s </span>
 				}
+				else
+				{
+					@foreach (var msnack in most_s)
+						{
+							<span> @msnack </span>
+						}
+					}
+
 			</div>
 			<div class="s_info vote"> @vote.ToString()표 </div>
 		</div>
