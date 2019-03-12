@@ -1,4 +1,9 @@
 ﻿@{
+	var overflag = ViewBag.Message;
+
+	if (overflag == true) {
+		<script> alert('이미 투표를 했습니다.'); </script>
+	}
 
 	var header = DateTime.Now.Month.ToString() + "월의 간식";
 
@@ -60,21 +65,21 @@
 <div class="row">
 	@foreach (var snack in Model)
 	{
-		<div class="col-sm-12 col-lg-6 text-center snack_list">
-			<div class="col-sm-8 col-lg-8 snack_info">
-					<div>
-						<span>@snack.SnackName</span>
-						<span style="color: #e73b63;">@snack.SnackVote.ToString()표</span>
-					</div>
-				<div>@snack.SnackPrice.ToString()원</div>
+	<div class="col-sm-12 col-lg-6 text-center snack_list">
+		<div class="col-sm-8 col-lg-8 snack_info">
+			<div>
+				<span>@snack.SnackName</span>
+				<span style="color: #e73b63;">@snack.SnackVote.ToString()표</span>
 			</div>
-			<div class="col-sm-4 col-lg-4">
-				<form class="form-horizontal" method="post" asp-controller="Snack" asp-action="Vote">
-					<input type="hidden" name="Sno" value="@snack.SnackNo" />
-					<button class="btn btn-default btn-vote"> 투표</button>
-				</form>
-			</div>
+			<div>@snack.SnackPrice.ToString()원</div>
 		</div>
+		<div class="col-sm-4 col-lg-4">
+			<form class="form-horizontal" method="post" asp-controller="Snack" asp-action="Vote">
+				<input type="hidden" name="Sno" value="@snack.SnackNo" />
+				<button class="btn btn-default btn-vote"> 투표</button>
+			</form>
+		</div>
+	</div>
 	}
 </div>
 
