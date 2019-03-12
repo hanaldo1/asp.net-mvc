@@ -176,7 +176,7 @@ WriteAttributeValue("", 915, Url.Action("Delete","Snack"), 915, 29, false);
             WriteLiteral("원</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"col-sm-4 col-lg-4\">\r\n\t\t\t\t");
             EndContext();
             BeginContext(1405, 225, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3e18a7422a444158669367e8abff51f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6deb943ff7a40a99a78228f6121ab7f", async() => {
                 BeginContext(1492, 38, true);
                 WriteLiteral("\r\n\t\t\t\t\t<input type=\"hidden\" name=\"Sno\"");
                 EndContext();
@@ -240,7 +240,7 @@ WriteAttributeValue("", 1538, snack.SnackNo, 1538, 14, false);
 				");
             EndContext();
             BeginContext(2126, 511, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "589b069a9f6740ecafc716faf8be1376", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea31df4906e4b40855aa964438d7f58", async() => {
                 BeginContext(2210, 420, true);
                 WriteLiteral(@"
 					<div class=""form-group  text-center"">

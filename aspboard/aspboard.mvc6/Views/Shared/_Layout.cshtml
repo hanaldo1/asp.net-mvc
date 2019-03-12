@@ -6,6 +6,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>@ViewData["Title"] - flosviafarm </title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
 
 	<environment include="Development">
 		<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -19,9 +20,15 @@
 	</environment>
 	<link rel="stylesheet" href="~/css/snack.css" />
 	<link rel="stylesheet" href="~/css/main.css" />
+	<link rel="stylesheet" href="~/css/index.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel='stylesheet' href='//cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css'>
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="~/js/index.js"></script>
 </head>
 <body>
+	<div>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -32,13 +39,13 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">FLOSVIAFARM</a>
-				<ul class="nav navbar-nav">
-					<li><a asp-area="" asp-controller="Board" asp-action="Index">Board</a></li>
-				</ul>
 			</div>
 			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav col-sm-4">
+					@*<li><a asp-area="" asp-controller="Board" asp-action="Index">Board</a></li>*@
+				</ul>
 				<!-- register / login button -->
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right col-sm-4">
 					@if (Context.Session.GetInt32("UserKey") == null)
 					{
 						<li><a asp-area="" asp-controller="Account" asp-action="Register">Register</a></li>
@@ -52,24 +59,37 @@
 			</div>
 		</div>
 	</nav>
+	</div>
 
 	<partial name="_CookieConsentPartial" />
 
-	<div class="Sheader">
-		<div class="menu row text-center">
-			<div class="col-xs-4 col-sm-4 col-lg-4 text-right">
-				<a>NOTICE</a>
-			</div>
-			<div class="col-xs-2 col-sm-2 col-lg-2">
-				<a>PLAN</a>
-			</div>
-			<div class="col-xs-2 col-sm-2 col-lg-2">
-				<a>MEMBER</a>
-			</div>
-			<div class="col-xs-4 col-sm-4 col-lg-4 text-left">
-				<a asp-controller="Snack" asp-action="Index">SNACK</a>
+	<div>
+	<nav class="navbar " >
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle menu-btn btn " data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon sr-only"></span>
+			<span style="color: #ffffff"> menu </span>
+		</button>
+		</div>
+		<div class="row text-center">
+			<div class="collapse navbar-collapse Sheader " id="navbarmenu">
+				<ul class="menu navbar">
+					<li class="nav-item col-lg-3 col-sm-3 col-xs-12">
+						<a class="nav-link" asp-controller="Board" asp-action="Index">NOTICE <span class="sr-only">(current)</span> </a>
+					</li>
+					<li class="nav-item col-lg-3 col-sm-3 col-xs-12">
+						<a class="nav-link" href="#">PLAN</a>
+					</li>
+					<li class="nav-item col-lg-3 col-sm-3 col-xs-12">
+						<a class="nav-link" href="#">MEMBERS</a>
+					</li>
+					<li class="nav-item col-lg-3 col-sm-3 col-xs-12">
+						<a class="nav-link" asp-controller="Snack" asp-action="Index">SNACK</a>
+					</li>
+				</ul>
 			</div>
 		</div>
+	</nav>
 	</div>
 
 	<div class="container body-content">
