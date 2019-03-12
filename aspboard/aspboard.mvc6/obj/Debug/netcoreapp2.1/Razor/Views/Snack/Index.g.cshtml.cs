@@ -217,9 +217,15 @@ WriteAttributeValue("", 1224, Url.Action("Delete","Snack"), 1224, 29, false);
             BeginContext(1656, 60, true);
             WriteLiteral("원</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"col-sm-4 col-lg-4\">\r\n\t\t\t\t");
             EndContext();
+<<<<<<< HEAD
             BeginContext(1716, 222, false);
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c7cf0fc0a5745ec80ecad907c711cff", async() => {
                 BeginContext(1801, 38, true);
+=======
+            BeginContext(1720, 222, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f7bba1e8fae4164b6c7b68770f544cc", async() => {
+                BeginContext(1805, 38, true);
+>>>>>>> snack
                 WriteLiteral("\r\n\t\t\t\t\t<input type=\"hidden\" name=\"Sno\"");
                 EndContext();
                 BeginWriteAttribute("value", " value=\"", 1839, "\"", 1861, 1);
@@ -281,9 +287,15 @@ WriteAttributeValue("", 1847, snack.SnackNo, 1847, 14, false);
 				<div class=""modal-body"">
 					");
             EndContext();
+<<<<<<< HEAD
             BeginContext(2445, 521, false);
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0685b851323141179c24f8150b967e02", async() => {
                 BeginContext(2529, 430, true);
+=======
+            BeginContext(2449, 521, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "482e15242a2f402a89d52f5eaae082de", async() => {
+                BeginContext(2533, 430, true);
+>>>>>>> snack
                 WriteLiteral(@"
 						<div class=""form-group  text-center"">
 							<input type=""text"" name=""Sname"" class=""form-control text-center"" placeholder=""이름을 입력하세요."" />
