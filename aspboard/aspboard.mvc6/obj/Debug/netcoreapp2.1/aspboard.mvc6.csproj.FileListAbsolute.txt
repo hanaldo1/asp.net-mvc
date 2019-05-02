@@ -5,7 +5,6 @@ D:\asp_dotnet\aspboard\aspboard.mvc6\bin\Debug\netcoreapp2.1\aspboard.mvc6.dll
 D:\asp_dotnet\aspboard\aspboard.mvc6\bin\Debug\netcoreapp2.1\aspboard.mvc6.pdb
 D:\asp_dotnet\aspboard\aspboard.mvc6\bin\Debug\netcoreapp2.1\aspboard.mvc6.Views.dll
 D:\asp_dotnet\aspboard\aspboard.mvc6\bin\Debug\netcoreapp2.1\aspboard.mvc6.Views.pdb
-D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\aspboard.mvc6.csprojAssemblyReference.cache
 D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\aspboard.mvc6.csproj.CoreCompileInputs.cache
 D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\aspboard.mvc6.RazorAssemblyInfo.cache
 D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\aspboard.mvc6.RazorAssemblyInfo.cs
@@ -30,3 +29,15 @@ D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\aspboard.mvc6.Views
 D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\aspboard.mvc6.dll
 D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\aspboard.mvc6.pdb
 D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\aspboard.mvc6.csproj.CopyComplete
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Home\LoginSuccess.g.cshtml.cs
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Board\Add.g.cshtml.cs
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Board\Edit.g.cshtml.cs
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Board\Index.g.cshtml.cs
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Board\Detail.g.cshtml.cs
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Snack\Index.g.cshtml.cs
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_SLayout.g.cshtml.cs
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Snack\Add.g.cshtml.cs
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\Razor\Views\Snack\Delete.g.cshtml.cs
+D:\asp_dotnet\aspboard\aspboard.mvc6\obj\Debug\netcoreapp2.1\aspboard.mvc6.csprojAssemblyReference.cache

@@ -1,0 +1,34 @@
+﻿@model aspboard.mvc6.Models.Snack
+
+<!-- modal -->
+<div class="modal fade" id="s_add">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">x</span>
+				</button>
+				<div>
+					<h4 class="text-center"> 새롭게 추가하고 싶은 간식의</h4>
+					<h4 class="text-center"> 이름과 가격을 입력하세요. </h4>
+				</div>
+			</div>
+			<div class="modal-body">
+				<form class="form-horizontal" method="post" asp-controller="Snack" asp-action="Add">
+					<div class="form-group">
+						<input type="text" class="form-control" asp-for="SnackName" placeholder="이름을 입력하세요." />
+						<span class="text-danger" asp-validation-for="SnackName"></span>
+					</div>
+					<div class="form-group">
+						<input type="number" class="form-control" asp-for="SnackPrice" placeholder="가격을 입력하세요." />
+						<span class="text-danger" asp-validation-for="SnackPrice"></span>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="submit" class="btn btn-primary">확인</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
