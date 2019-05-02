@@ -1,4 +1,16 @@
-/aspboard/aspboard.mvc6/DataContext/*.*
+/aspboard/aspboard.mvc6/DataContext/
+/aspboard/aspboard.mvc6/Migrations/
+/aspboard/aspboard.mvc6/bin/
+/aspboard/aspboard.mvc6/obj/
+/aspboard/aspboard.mvc6/*.json
+/aspboard/aspboard.mvc6/*.cs
+/aspboard/aspboard.mvc6/*.config
+/aspboard/aspboard.mvc6/*.csproj
+/aspboard/aspboard.mvc6/*.csproj.user
 
-/aspboard/aspboard.mvc6/Migrations/*.*
-
+/test/test/bin/
+/test/test/obj/
+/test/test/*.json
+/test/test/*.cs
+/test/test/*.csproj
+/test/test/*.csproj.user
